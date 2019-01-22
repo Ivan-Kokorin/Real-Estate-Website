@@ -350,3 +350,77 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     color: rgb(255, 255, 255);
     line-height: 1.417;
 }
+/*Стили второго блока хэдера*/
+.header-middle{
+    background-color: #d7d7d7;
+}
+.header-middle-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 12px 15px;
+}
+.header-nav__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-nav__item{
+    display: inline-block;
+    margin-right: 10px;
+}
+.header-nav__item a{
+    font-size: 16px;
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    color: rgb(58, 83, 98);
+    text-decoration:  none;
+    padding: 0 15px;
+}
+
+.sign-block a{
+    font-size: 16px;
+    font-family: "MS Sans Serif", Arial sans-serif;
+    color: rgb(58, 83, 98);
+    text-decoration:  none;
+    padding: 5px;
+}
+.line-bottom{
+    height: 4px;
+    background-color: #4b83a6;
+}
+.slider-features{
+    width: 505px;
+    height: 340px;
+    border: 9px solid #f2e8e8;
+
+}
+.slider-features__photo{
+    width: 487px;
+    height: 250px;
+    overflow: hidden;
+    border-bottom: 1px solid #3686b8;
+}
+.slider-features__text{
+    background-color: #1a425a;
+    height: 100%;
+    padding-left: 25px;
+}
+.slider-features__title{
+    display: block;
+    font-size: 20px;
+    font-family: Arial, "Trebuchet MS", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+}
+.slider-features__description{
+    display: block;
+    font-size: 14px;
+    font-family: Arial, "Trebuchet MS", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 2.429;
+}
+.slick-dots li button::before{
+    color: #fff;
+}
+.slick-dots li button:before{
+    color: #2c6080;
+}
