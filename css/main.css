@@ -297,3 +297,56 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     width: 1px !important;
     overflow: hidden;
 }
+
+/*Блок-центровщик*/
+.grid{
+    width: 1004px;
+    margin: 0 auto;
+}
+
+/*Стили верхней части header*/
+.header-top{
+    background: linear-gradient(to top left, #4b83a6, #6293b1);
+    color: #fff;
+}
+.header-top-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 25px 20px 45px;
+}
+
+/*Блок лого в шапке*/
+.header-logo{
+    position: relative;
+}
+.header-logo::before{
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 50px;
+    background: url("../image/header/logo.png");
+    top: -30px;
+    left: -30px;
+    position: absolute;
+
+    background-size: cover;
+}
+.header-logo__title-logo{
+    font-size: 28px;
+    font-family: "AdobeFangsongStd", "Californian FB", Serif;
+    line-height: 0.75;
+}
+.header-logo__subtitle-logo{
+    font-size: 16px;
+    font-family: "Microsoft New Tai Lue", Arial, sans-serif;
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+/*Телефон в шапке*/
+.header-phone{
+    font-size: 24px;
+    font-family: "ACaslonPro", "Goudy Old Style", Serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.417;
+}
