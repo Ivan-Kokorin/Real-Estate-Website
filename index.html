@@ -16,14 +16,14 @@
 <header class="header">
     <div class="header-top">
         <div class="header-top-wrap grid">
-            <div class="header-logo">
+            <a href="#" class="header-logo">
                 <div class="header-logo__title-logo">
                     Realestate Company
                 </div>
                 <div class="header-logo__subtitle-logo">
                     Lorem Ipsum is simply dummy text
                 </div>
-            </div>
+            </a>
             <div class="header-phone">
                 Call us: (214) 227-7669
             </div>
@@ -53,60 +53,147 @@
         <div class="line-bottom"></div>
     </div>
     <div class="header-bottom">
-        <div class="slider-features">
-            <div class="slider-features__content">
-                <div class="slider-features__photo">
-                    <img src="image/header/slider-photo.png" alt="slider-photo">
+        <div class="header-bottom__wrap grid">
+            <div class="slider-features">
+                <div class="slider-features__content">
+                    <div class="slider-features__photo">
+                        <img src="image/header/slider-photo.png" alt="slider-photo">
+                    </div>
+                    <div class="slider-features__text">
+                        <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
+                        <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                    </div>
                 </div>
-                <div class="slider-features__text">
-                    <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
-                    <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                <div class="slider-features__content">
+                    <div class="slider-features__photo">
+                        <img src="image/header/slider-photo.png" alt="slider-photo">
+                    </div>
+                    <div class="slider-features__text">
+                        <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
+                        <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-features__content">
-                <div class="slider-features__photo">
-                    <img src="image/header/slider-photo.png" alt="slider-photo">
+                <div class="slider-features__content">
+                    <div class="slider-features__photo">
+                        <img src="image/header/slider-photo.png" alt="slider-photo">
+                    </div>
+                    <div class="slider-features__text">
+                        <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
+                        <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                    </div>
                 </div>
-                <div class="slider-features__text">
-                    <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
-                    <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                <div class="slider-features__content">
+                    <div class="slider-features__photo">
+                        <img src="image/header/slider-photo.png" alt="slider-photo">
+                    </div>
+                    <div class="slider-features__text">
+                        <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
+                        <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-features__content">
-                <div class="slider-features__photo">
-                    <img src="image/header/slider-photo.png" alt="slider-photo">
+                <div class="slider-features__content">
+                    <div class="slider-features__photo">
+                        <img src="image/header/slider-photo.png" alt="slider-photo">
+                    </div>
+                    <div class="slider-features__text">
+                        <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
+                        <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
+                    </div>
                 </div>
-                <div class="slider-features__text">
-                    <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
-                    <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
-                </div>
-            </div>
-            <div class="slider-features__content">
-                <div class="slider-features__photo">
-                    <img src="image/header/slider-photo.png" alt="slider-photo">
-                </div>
-                <div class="slider-features__text">
-                    <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
-                    <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
-                </div>
-            </div>
-            <div class="slider-features__content">
-                <div class="slider-features__photo">
-                    <img src="image/header/slider-photo.png" alt="slider-photo">
-                </div>
-                <div class="slider-features__text">
-                    <span class="slider-features__title">Lorem Ipsum is simply dummy text of</span>
-                    <span class="slider-features__description">We work with investors to make managing your investments easy!</span>
-                </div>
-            </div>
 
+            </div>
+            <div class="form-tenants-owners">
+                <input class="form-tenants-owners__tenants-check" type="radio" name="option" id="tenants-check" checked />
+                <input class="form-tenants-owners__owners-check" type="radio" name="option" id="owners-check" />
+                    <div class="form-tenants-owners__switch-form">
+                            <label class='form-tenants-owners__tenants-label' for="tenants-check">Tenants</label>
+                            <label class='form-tenants-owners__owners-label' for="owners-check">Owners</label>
+                    </div>
+                    <form action="#" class="form-tenants-owners__tenants">
+
+                        <label for="address-tenants">Address, Suburbs, Postcodes, or Regions</label>
+                        <input type="text" class="form-tenants-owners__address-tenants" id="address-tenants" placeholder="Example: Wichita Falls, Texas 76301">
+                        <input type="checkbox" class="form-tenants-owners__include-suburbs" id="include suburbs" checked>
+                        <label for="include suburbs">Include surrounding suburbs</label><br>
+                        <div class="form-tenants-owners__property">
+                            <label for="select-property">Property Type :</label>
+                            <input type="number" class="form-tenants-owners__select" id="select-property" placeholder="select one">
+                        </div>
+                        <div class="form-tenants-owners__bedroom">
+                            <label for="select-bedrooms">Bedrooms :</label>
+                            <input type="number" class="form-tenants-owners__select" id="select-bedrooms" placeholder="select one">
+                        </div>
+                        <input type="button" class="form-tenants-owners__search-room" value="Search">
+
+                    </form>
+                    <form action="#" class="form-tenants-owners__owners">
+                        <div class="form-tenants-owners__property">
+                            <label>Property Type :
+                                <input type="number" class="form-tenants-owners__select" placeholder="select one">
+                            </label>
+                        </div>
+                        <div class="form-tenants-owners__bedroom">
+                            <label>Bedrooms :
+                                <input type="number" class="form-tenants-owners__select" placeholder="select one">
+                            </label>
+                        </div>
+                        <label>Address, Suburbs, Postcodes, or Regions
+                            <input type="text" class="form-tenants-owners__address-tenants" placeholder="Example: Wichita Falls, Texas 76301">
+                        </label>
+                        <label>
+                            <input type="checkbox" class="form-tenants-owners__include-suburbs" checked>
+                        Include surrounding suburbs
+                        </label>
+                        <input type="button" class="form-tenants-owners__search-room" value="Search">
+                    </form>
+
+            </div>
         </div>
     </div>
 
 </header>
 <!-- /.header -->
 
-<main class="content"></main>
+<main class="content">
+    <div class="column-buy-sell">
+        <div class="column-buy-sell__wrap grid">
+            <div class="column-buy-sell__buy">
+                <a href="#" class="column-buy-sell__title">Buy a home</a>
+                <p class="column-buy-sell__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            </div>
+            <div class="column-buy-sell__sell">
+                <a href="#" class="column-buy-sell__title">Sell a home</a>
+                <p class="column-buy-sell__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+            </div>
+            <div class="column-buy-sell__buy">
+                <a href="#" class="column-buy-sell__title">Rent a home</a>
+                <p class="column-buy-sell__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-content">
+        <div class="gallery-content__wrap grid">
+            <a  href="#" class="gallery-content__block-photo">
+                <div class="gallery-content__border-photo">
+                    <div class="gallery-content__wrap-photo">
+
+                    </div>
+                </div>
+                <div class="gallery-content__text">
+                    <span class="gallery-content__desc-photo">
+                        4605 Bayonne Court
+                    </span>
+                    <span class="gallery-content__subdesc-photo">
+                        Arlington, TX 76016
+                    </span>
+                </div>
+                <div class="gallery-content__searching-icon">
+                    
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
 <!-- /.content -->
 
 <footer class="footer"></footer>

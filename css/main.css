@@ -318,6 +318,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 /*Блок лого в шапке*/
 .header-logo{
     position: relative;
+    text-decoration: none;
+    color: #fff;
 }
 .header-logo::before{
     content: "";
@@ -328,7 +330,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     top: -30px;
     left: -30px;
     position: absolute;
-
     background-size: cover;
 }
 .header-logo__title-logo{
@@ -375,7 +376,9 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     text-decoration:  none;
     padding: 0 15px;
 }
-
+.header-nav__item a:hover{
+    opacity: 0.7;
+}
 .sign-block a{
     font-size: 16px;
     font-family: "MS Sans Serif", Arial sans-serif;
@@ -383,9 +386,20 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     text-decoration:  none;
     padding: 5px;
 }
+.sign-block a:hover{
+    opacity: 0.7;
+}
 .line-bottom{
     height: 4px;
     background-color: #4b83a6;
+}
+.header-bottom{
+    background: linear-gradient(to bottom, #2d698f, #3786b7);
+}
+.header-bottom__wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 25px;
 }
 .slider-features{
     width: 505px;
@@ -420,7 +434,199 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 .slick-dots li button::before{
     color: #fff;
+    opacity: 1;
+    font-size: 12px;
+    top: 12px;
 }
-.slick-dots li button:before{
-    color: #2c6080;
+.slick-dots li.slick-active button::before{
+    color: #2c5f7f;
+}
+.form-tenants-owners{
+    /*background: linear-gradient(to top, #5b9cc4, transparent);*/
+    background-color: transparent;
+}
+.form-tenants-owners__tenants-check, .form-tenants-owners__owners-check{
+    display: none;
+}
+.form-tenants-owners__switch-form label{
+    display: inline-block;
+    background-color: #c2f2ed;
+    font-size: 22px;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    line-height: 0.955;
+    margin-right: 2px;
+    color: #4b83a6;
+    padding: 18px 30px 12px 40px;
+    border-radius: 12px 12px 0 0 ;
+    cursor: pointer;
+}
+input.form-tenants-owners__owners-check:checked ~ .form-tenants-owners__switch-form label.form-tenants-owners__owners-label{
+    color: #ffffff;
+    background-color: #5796bd;
+}
+input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-form label.form-tenants-owners__tenants-label{
+    color: #ffffff;
+    background-color: #5796bd;
+}
+.form-tenants-owners__tenants{
+    display: inline-block;
+    width: 420px;
+    height: 330px;
+    background: linear-gradient(to bottom, #5796bd, transparent);
+    border-radius: 0 12px 0 0 ;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Arial", sans-serif, Calibri;
+    padding: 20px 38px 0 38px;
+    box-sizing: border-box;
+
+}
+.form-tenants-owners__owners{
+    display: inline-block;
+    width: 420px;
+    height: 330px;
+    background: linear-gradient(to bottom, #5796bd, transparent);
+    border-radius: 0 12px 0 0 ;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Arial", sans-serif, Calibri;
+    padding: 20px 38px 0 38px;
+    box-sizing: border-box;
+}
+#owners-check:checked ~ .form-tenants-owners__tenants{
+    display: none;
+}
+#tenants-check:checked ~ .form-tenants-owners__owners{
+    display: none;
+}
+.form-tenants-owners__address-tenants{
+    border: 3px solid #bbb;
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 15px 0;
+}
+.form-tenants-owners__tenants input:focus{
+    border: 3px solid #316e94;
+    font-size: 17px;
+    font-family: "Myriad Pro", Arial, sans-serif, Calibri;
+    color: #347095;
+    outline: none;
+}
+.form-tenants-owners__include-suburbs{
+    margin: 0 4px 15px 9px;
+}
+.form-tenants-owners__property{
+    display: flex;
+    justify-content: space-between;
+}
+.form-tenants-owners__bedroom{
+    display: flex;
+    justify-content: flex-end;
+}
+.form-tenants-owners__property{
+    margin-bottom: 18px;
+}
+.form-tenants-owners__property label{
+    line-height: 2;
+    margin-left: 9px;
+}
+.form-tenants-owners__bedroom label{
+    line-height: 2;
+    margin-right: 22px;
+}
+.form-tenants-owners__select{
+    width: 203px;
+    border: 3px solid #bbb;
+    border-radius: 5px;
+    padding: 8px 0 8px 20px;
+    box-sizing: border-box;
+}
+.form-tenants-owners__search-room{
+    border: 3px solid #bbb;
+    border-radius: 10px;
+    width: 210px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: "Arial", Calibri, sans-serif;
+    background: linear-gradient(to top, #4a8ab3, #6bb2dd);
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 10px 0 10px 0;
+    float: right;
+    line-height: 1;
+}
+.column-buy-sell{
+    background: linear-gradient(to top, #c2f2ed, #eefffd);
+}
+.column-buy-sell__wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.column-buy-sell__buy, .column-buy-sell__sell, .column-buy-sell__buy{
+    width: 285px;
+}
+.column-buy-sell__buy{
+    margin-left: 30px;
+}
+.column-buy-sell__title{
+    color: #4484ad;
+    font-size: 22px;
+    font-family: "Arial", Calibri, sans-serif;
+    text-decoration: none;
+}
+.column-buy-sell__desc{
+    color: #43515a;
+    font-size: 13px;
+    font-family: "Arial", Calibri, sans-serif;
+    line-height: 1.692;
+    margin: 24px 0;
+}
+.column-buy-sell__title::before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 31px;
+    background: url("../image/content/home.png");
+    background-size: cover;
+    vertical-align: bottom;
+    margin-right: 7px;
+}
+.gallery-content__block-photo{
+    display: inline-block;
+    width: 220px;
+    height: 202px;
+    border-radius: 0 0 5px 5px;
+    background-color: #4f8fb7;
+    color: #ffffff;
+    text-decoration: none;
+}
+.gallery-content__wrap-photo{
+    width: 208px;
+    height: 135px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url("../image/content/photo-for-block.png") center no-repeat;
+}
+.gallery-content__border-photo{
+    border: 6px solid #bbbbbb;
+    display: inline-block;
+}
+.gallery-content__desc-photo{
+    display: inline-block;
+    font-family: "MS Sans Serif", Arial, Calibri;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.gallery-content__subdesc-photo{
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Arial", Calibri, sans-serif;
+
+    margin-left: 10px;
+    margin-top: 4px;
 }
