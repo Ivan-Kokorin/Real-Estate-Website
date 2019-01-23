@@ -302,6 +302,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .grid{
     width: 1004px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /*Стили верхней части header*/
@@ -399,7 +400,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .header-bottom__wrap{
     display: flex;
     justify-content: space-between;
-    padding: 18px 25px;
+    padding: 18px 25px 18px 28px;
 }
 .slider-features{
     width: 505px;
@@ -570,7 +571,7 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     width: 285px;
 }
 .column-buy-sell__buy{
-    margin-left: 30px;
+    margin-left: 28px;
 }
 .column-buy-sell__title{
     color: #4484ad;
@@ -595,7 +596,7 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     vertical-align: bottom;
     margin-right: 7px;
 }
-.gallery-content__block-photo{
+.block-photo{
     display: inline-block;
     width: 220px;
     height: 202px;
@@ -604,29 +605,52 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     color: #ffffff;
     text-decoration: none;
 }
-.gallery-content__wrap-photo{
+.block-photo__wrap-photo{
     width: 208px;
     height: 135px;
     box-sizing: border-box;
     overflow: hidden;
     background: url("../image/content/photo-for-block.png") center no-repeat;
 }
-.gallery-content__border-photo{
+.block-photo__border-photo{
     border: 6px solid #bbbbbb;
     display: inline-block;
 }
-.gallery-content__desc-photo{
+.block-photo__text{
+    width: 170px;
+    display: inline-block;
+}
+.block-photo__desc-photo{
     display: inline-block;
     font-family: "MS Sans Serif", Arial, Calibri;
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 10px;
     margin-top: 5px;
 }
-.gallery-content__subdesc-photo{
+.block-photo__subdesc-photo{
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Arial", Calibri, sans-serif;
-
     margin-left: 10px;
     margin-top: 4px;
+}
+.block-photo__searching-icon{
+    display: inline-block;
+    vertical-align: center;
+}
+.block-photo__searching-icon::after{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background: url("../image/content/searching-icon.svg");
+    background-size: cover;
+}
+.galery-element{
+    margin: 0 19px 20px 0;
+}
+.gallery-content__wrap{
+    padding-top: 21px;
+    padding-left: 28px;
+    padding-bottom: 10px;
 }
