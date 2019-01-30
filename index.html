@@ -34,7 +34,7 @@
             <nav class="header-nav">
                 <ul class="header-nav__list">
                     <li class="header-nav__item"><a href="#">Home</a></li>
-                    <li class="header-nav__item"><a href="#">Our story</a></li>
+                    <li class="header-nav__item header-nav__active"><a href="#">Our story</a></li>
                     <li class="header-nav__item"><a href="#">Tenant</a></li>
                     <li class="header-nav__item"><a href="#">Owner</a></li>
                     <li class="header-nav__item"><a href="#">Contact us</a></li>
@@ -173,7 +173,7 @@
     </div>
     <div class="gallery-content">
         <div class="gallery-content__wrap grid">
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -189,7 +189,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -205,7 +205,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -221,7 +221,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -237,7 +237,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -253,7 +253,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -269,7 +269,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -285,7 +285,7 @@
                 </div>
                 <div class="block-photo__searching-icon"></div>
             </a>
-            <a  href="#" class="block-photo galery-element">
+            <a  href="#" class="block-photo gallery-content__element">
                 <div class="block-photo__border-photo">
                     <div class="block-photo__wrap-photo">
 
@@ -306,7 +306,102 @@
 </main>
 <!-- /.content -->
 
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-top__wrap grid">
+            <div class="form-login-footer footer-top_element-1">
+                <div class="form-login-footer__title">
+                    Member login
+                </div>
+                <form>
+                    <input type="text" name="user-name" class="form-login-footer__name form-subscribe-footer__input--mod" placeholder="User name">
+                    <input type="password" name="user-password" class="form-login-footer__password form-subscribe-footer__input--mod" placeholder="Password">
+                    <input type="button" name="login-button" value="Login" class="form-login-footer__button form-footer__button--mod">
+                </form>
+            </div>
+            <div class="form-subscribe-footer footer-top_element-2">
+                <div class="form-subscribe-footer__title">
+                    Subscribe to our weekly newsletter
+                </div>
+                <form>
+                    <input type="email" name="subscribe-email" class="form-subscribe-footer__email form-subscribe-footer__input--mod" placeholder="email address">
+                    <input type="button" name="subscribe-button" value="Subscribe" class="form-subscribe-footer__button form-footer__button--mod">
+                </form>
+            </div>
+            <div class="button-sign footer-top_element-1">
+                <button class="button-sign__in">Not a member yet</button>
+                <button class="button-sign__up">Signup Now</button>
+            </div>
+            <div class="social-icon footer-top_element-2">
+                <a href="#" class="social-icon__facebook">
+                    <span class="visually-hidden">facebook</span>
+                </a>
+                <a href="#" class="social-icon__twitter">
+                    <span class="visually-hidden">twitter</span>
+                </a>
+                <a href="#" class="social-icon__google-plus">
+                    <span class="visually-hidden">google+</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom__wrap grid">
+            <nav class="about-us">
+                <a href="#" class="about-us__title">About Us</a>
+                <ul class="about-us__list">
+                    <li class="about-us__element"><a class="about-us__link" href="#">About us</a></li>
+                    <li class="about-us__element"><a class="about-us__link" href="#">Why us</a></li>
+                    <li class="about-us__element"><a class="about-us__link" href="#">Customer Stories</a></li>
+                    <li class="about-us__element"><a class="about-us__link" href="#">Press Resources</a></li>
+                    <li class="about-us__element"><a class="about-us__link" href="#">Press Releases</a></li>
+                    <li class="about-us__element"><a class="about-us__link" href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <nav class="proparties">
+                <a href="#" class="proparties__title">Proparties</a>
+                <ul class="proparties__list">
+                    <li class="proparties__element"><a class="proparties__link" href="#">Rent a home</a></li>
+                    <li class="proparties__element"><a class="proparties__link" href="#">Lease a home</a></li>
+                    <li class="proparties__element"><a class="proparties__link" href="#">Buy a home</a></li>
+                    <li class="proparties__element"><a class="proparties__link" href="#">Sell a home</a></li>
+                    <li class="proparties__element"><a class="proparties__link" href="#">Ask advices</a></li>
+                </ul>
+            </nav>
+            <div class="costamer-testimonials">
+                <a href="#" class="costamer-testimonials__title">Costamer Testimonials</a>
+                <div class="costamer-testimonials__slider">
+                    <p class="costamer-testimonials__slider-text">Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industr
+                        standard dummy text ever since the 1500s,<br>
+                        when an unknown printer took a <br>
+                        <b>Lorem Ipsum is simply<br>
+                        Owner, Lorem Ipsum</b></p>
+                    <p class="costamer-testimonials__slider-text">Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industr
+                        standard dummy text ever since the 1500s,<br>
+                        when an unknown printer took a <br>
+                        <b>Lorem Ipsum is simply<br>
+                        Owner, Lorem Ipsum</b></p>
+                    <p class="costamer-testimonials__slider-text">Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industr
+                        standard dummy text ever since the 1500s,<br>
+                        when an unknown printer took a <br>
+                        <b>Lorem Ipsum is simply<br>
+                        Owner, Lorem Ipsum</b></p>
+                </div>
+            </div>
+            <div class="footer-company">
+                <a href="#" class="footer-company__title-logo">
+                    Realestate Company
+                </a>
+                <div class="footer-company__copyright">
+                    &copy; cssauthor.com
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- /.footer -->
 
 <script src="js/jquery-3.3.1.min.js"></script>

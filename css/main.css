@@ -378,7 +378,22 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     padding: 0 15px;
 }
 .header-nav__item a:hover{
-    opacity: 0.7;
+    color: rgb(58, 83, 98, 0.8);
+}
+.header-nav__active a{
+    position: relative;
+    color: #fff;
+    z-index: 0;
+}
+.header-nav__active a:before{
+    content: '';
+    width: 106px;
+    height: 44px;
+    background: url("../image/header/header_menu.png") center no-repeat;
+    position: absolute;
+    left: -4px;
+    top: -5px;
+    z-index: -1;
 }
 .sign-block a{
     font-size: 16px;
@@ -646,11 +661,245 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     background: url("../image/content/searching-icon.svg");
     background-size: cover;
 }
-.galery-element{
+.gallery-content__element{
     margin: 0 19px 20px 0;
 }
 .gallery-content__wrap{
     padding-top: 21px;
     padding-left: 28px;
     padding-bottom: 10px;
+}
+
+.footer{
+    color: #ffffff;
+}
+/*Стили верхней части футера*/
+.footer-top{
+    background-color: #5c90af;
+}
+.footer-top__wrap{
+    padding: 12px 13px 14px 21px;
+}
+.form-login-footer, .form-subscribe-footer{
+    display: inline-block;
+    width: 470px;
+    height: 110px;
+    background: linear-gradient(to top, #679abb, #82bbdf);
+    border: 1px solid #d7d7d7;
+    border-radius: 7px;
+    padding: 14px 0 23px 24px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+/*модификатор инпута в формах футера*/
+.form-subscribe-footer__input--mod{
+    font-size: 16px;
+    font-family: "Arial", Calibri, sans-serif;
+    color: rgb(75, 125, 155);
+    line-height: 1.313;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
+/*Форма входа*/
+.form-login-footer__title, .form-subscribe-footer__title{
+    font-size: 24px;
+    font-family: "Arial", Calibri, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.875;
+    margin-bottom: 22px;
+}
+/*поля формы входа*/
+.form-login-footer__name{
+    width: 150px;
+    margin-right: 13px;
+}
+
+.form-login-footer__password{
+    width: 150px;
+    margin-right: 9px;
+}
+/*модификатор кнопки формы футера*/
+.form-footer__button--mod{
+    font-size: 16px;
+    font-family: "Arial", Calibri, sans-serif;
+    color: rgb(255, 255, 255);
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+    background: linear-gradient(to top, #4a8ab3, #6bb2dd);
+    box-sizing: border-box;
+    line-height: 1.313;
+    padding: 4px 0;
+    outline: none;
+    cursor: pointer;
+}
+.form-footer__button--mod:focus{
+    background: linear-gradient(to top, #ff6f03, #ffa765);
+}
+.form-subscribe-footer__title{
+    font-size: 20px;
+}
+.form-login-footer__button{
+    width: 95px;
+}
+/*форма подписки*/
+.form-subscribe-footer__email{
+    width: 310px;
+    margin-right: 6px;
+}
+.form-subscribe-footer__button{
+    width: 110px;
+}
+.footer-top_element-1{
+    margin-right: 22px;
+    margin-bottom: 12px;
+}
+/*Подписка/регистрация*/
+.button-sign{
+    display: inline-block;
+    vertical-align: top;
+}
+.button-sign__in, .button-sign__up{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Arial", Calibri, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.955;
+    display: inline-block;
+}
+.button-sign__in{
+    padding: 10px 75px 10px 47px;
+    border-right: 1px solid #d7d7d7;
+    background: linear-gradient(to top, #679abb, #82bbdf);
+    border: 1px solid #d7d7d7;
+    border-radius: 7px 0 0 7px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+.button-sign__in:focus{
+    background: linear-gradient(to top, #ff6f03, #ffa765);
+}
+.button-sign__up{
+    margin-left: -4px;
+    padding: 10px 18px 10px 33px;
+    background: linear-gradient(to top, #679abb, #82bbdf);
+    border: 1px solid #d7d7d7;
+    border-radius: 0 7px 7px 0;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+.button-sign__up:focus{
+    background: linear-gradient(to top, #ff6f03, #ffa765);
+}
+/*иконки социальных сетей*/
+.social-icon{
+    display: inline-block;
+}
+.social-icon__facebook{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../image/footer/facebook.png") center no-repeat;
+    margin-right: 14px;
+}
+.social-icon__twitter{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../image/footer/twitter.png") center no-repeat;
+    margin-right: 14px;
+}
+.social-icon__google-plus{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../image/footer/google +.png") center no-repeat;
+}
+/*нижняя часть футера*/
+.footer-bottom{
+    background-color: #4b7d9b;
+}
+.footer-bottom__wrap{
+    padding: 25px 75px 47px 36px;
+}
+/*навигация в футере*/
+.about-us, .proparties{
+    display: inline-block;
+    vertical-align: top;
+}
+.about-us__title, .proparties__title, .costamer-testimonials__title{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial", Calibri, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 2.063;
+}
+.about-us__list, .proparties__list, .costamer-testimonials__slider-text{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 7px;
+}
+.about-us__link, .proparties__link, .costamer-testimonials__slider-text, .footer-company__copyright{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Arial", Calibri, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.692;
+}
+.proparties{
+    margin-left: 86px;
+    margin-right: 105px;
+}
+/*слайдер с отзывами*/
+.costamer-testimonials{
+    display: inline-block;
+    width: 320px;
+}
+.slick-prev{
+    left: 195px;
+    top: -15px;
+    opacity: 0.3;
+}
+.slick-next{
+    right: 77px;
+    top: -15px;
+    opacity: 0.3;
+}
+
+/*логотип в футере*/
+.footer-company{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+.footer-company__title-logo::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    background: url("../image/header/logo.png");
+    top: -18px;
+    left: -18px;
+    position: absolute;
+    background-size: cover;
+}
+.footer-company__title-logo{
+    font-size: 18px;
+    font-family: "AdobeFangsongStd", "Californian FB", Serif;
+    line-height: 0.75;
+    margin-top: 25px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+.footer-company__copyright{
+    margin-top: 35px;
 }
