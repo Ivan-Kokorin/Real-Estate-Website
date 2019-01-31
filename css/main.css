@@ -378,7 +378,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     padding: 0 15px;
 }
 .header-nav__item a:hover{
-    color: rgb(58, 83, 98, 0.8);
+    text-shadow: 0 0 1px;
 }
 .header-nav__active a{
     position: relative;
@@ -523,13 +523,16 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     box-sizing: border-box;
     display: block;
     margin: 15px 0;
+    outline: none;
+    font-size: 17px;
 }
 .form-tenants-owners__tenants input:focus{
     border: 3px solid #316e94;
     font-size: 17px;
     font-family: "Myriad Pro", Arial, sans-serif, Calibri;
     color: #347095;
-    outline: none;
+    box-sizing: border-box;
+    
 }
 .form-tenants-owners__include-suburbs{
     margin: 0 4px 15px 9px;
@@ -573,6 +576,11 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     padding: 10px 0 10px 0;
     float: right;
     line-height: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.form-tenants-owners__search-room:hover{
+    opacity: 0.8;
 }
 .column-buy-sell{
     background: linear-gradient(to top, #c2f2ed, #eefffd);
@@ -581,6 +589,9 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
+}
+.column-buy-sell__wrap a:hover{
+    text-shadow: 0 0 1px;
 }
 .column-buy-sell__buy, .column-buy-sell__sell, .column-buy-sell__buy{
     width: 285px;
@@ -627,6 +638,7 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     overflow: hidden;
     background: url("../image/content/photo-for-block.png") center no-repeat;
 }
+
 .block-photo__border-photo{
     border: 6px solid #bbbbbb;
     display: inline-block;
@@ -663,6 +675,10 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
 }
 .gallery-content__element{
     margin: 0 19px 20px 0;
+    transition: 0.5s;
+}
+.gallery-content__element:hover{
+    transform: scale(1.1);
 }
 .gallery-content__wrap{
     padding-top: 21px;
@@ -735,6 +751,10 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     padding: 4px 0;
     outline: none;
     cursor: pointer;
+    transition: 0.9s;
+}
+.form-footer__button--mod:hover{
+    background: linear-gradient(to bottom, #4a8ab3, #6bb2dd);
 }
 .form-footer__button--mod:focus{
     background: linear-gradient(to top, #ff6f03, #ffa765);
@@ -769,6 +789,10 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     color: rgb(255, 255, 255);
     line-height: 0.955;
     display: inline-block;
+    transition: 0.4s;
+}
+.button-sign__in:hover, .button-sign__up:hover{
+    opacity: 0.8;
 }
 .button-sign__in{
     padding: 10px 75px 10px 47px;
@@ -800,6 +824,13 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
 .social-icon{
     display: inline-block;
 }
+.social-icon a{
+    transition: 0.4s;
+}
+.social-icon a:hover{
+    transform: scale(1.05);
+    background-color: rgba(0,0,0,.4);
+}
 .social-icon__facebook{
     display: inline-block;
     width: 45px;
@@ -826,6 +857,9 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
 }
 .footer-bottom__wrap{
     padding: 25px 75px 47px 36px;
+}
+.footer-bottom a:hover{
+    opacity: 0.8;
 }
 /*навигация в футере*/
 .about-us, .proparties{
