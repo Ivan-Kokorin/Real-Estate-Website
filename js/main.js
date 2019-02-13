@@ -8,7 +8,7 @@ $(document).ready( function() {
     $('.costamer-testimonials__slider').slick({
     	arrows: true,
     	dots: false,
-    	idesToShow: 1,
+    	slidesToShow: 1,
         slidesToScroll: 1
     })
 });
