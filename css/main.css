@@ -322,6 +322,9 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     text-decoration: none;
     color: #fff;
 }
+.header-logo:hover{
+    opacity: 0.8;
+}
 .header-logo::before{
     content: "";
     display: inline-block;
@@ -403,7 +406,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     padding: 5px;
 }
 .sign-block a:hover{
-    opacity: 0.7;
+    text-shadow: 0 0 1px;
 }
 .line-bottom{
     height: 4px;
@@ -484,6 +487,9 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     color: #ffffff;
     background-color: #5796bd;
 }
+.form-tenants-owners__tenants-label:hover, .form-tenants-owners__owners-label:hover{
+    text-shadow: 0 0 1px;
+}
 .form-tenants-owners__tenants{
     display: inline-block;
     width: 420px;
@@ -534,8 +540,39 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     box-sizing: border-box;
     
 }
+.form-tenants-owners__text{
+    display: inline-block;
+}
 .form-tenants-owners__include-suburbs{
+    display: none;
+}
+.form-tenants-owners__checkbox-style{
+    display: inline-block;
     margin: 0 4px 15px 9px;
+
+}
+.form-tenants-owners__checkbox-style::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background-color: #ebebeb;
+    font-size: 12px;
+    font-weight: 900;
+    color: #3a88ba;
+    text-align: center;
+    line-height: 15px;
+}
+.form-tenants-owners__include-suburbs:checked + .form-tenants-owners__checkbox-style::before{
+    content: "\2713";
+    font-size: 12px;
+    font-weight: 900;
+    color: #3a88ba;
+    text-align: center;
+
+    display: inline-block;
 }
 .form-tenants-owners__property{
     display: flex;
@@ -637,11 +674,13 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     box-sizing: border-box;
     overflow: hidden;
     background: url("../image/content/photo-for-block.png") center no-repeat;
+    transition: 0.5s;
 }
 
 .block-photo__border-photo{
     border: 6px solid #bbbbbb;
     display: inline-block;
+    overflow: hidden;
 }
 .block-photo__text{
     width: 170px;
@@ -665,6 +704,9 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     display: inline-block;
     vertical-align: center;
 }
+.gallery-content__element:hover > .block-photo__text, .gallery-content__element:hover > .block-photo__searching-icon{
+    opacity: 0.8;
+}
 .block-photo__searching-icon::after{
     content: "";
     display: inline-block;
@@ -677,7 +719,7 @@ input.form-tenants-owners__tenants-check:checked ~ .form-tenants-owners__switch-
     margin: 0 19px 20px 0;
     transition: 0.5s;
 }
-.gallery-content__element:hover{
+.block-photo__wrap-photo:hover{
     transform: scale(1.1);
 }
 .gallery-content__wrap{
